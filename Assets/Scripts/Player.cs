@@ -5,11 +5,17 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] float moveSpeed = 1f; 
     Vector2 rawInput;
 
     void Update()
     {
-        Vector3 delta = rawInput;
+        Move();
+    }
+
+    void Move()
+    {
+        Vector3 delta = rawInput * moveSpeed * Time.deltaTime;
         transform.position += delta;
     }
 
