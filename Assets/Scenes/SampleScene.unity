@@ -351,7 +351,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e95e69c85dca254891b8a6775ba8932, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWave: {fileID: 11400000, guid: 21ddbdf3178d54a4ca31b563ac04a71c, type: 2}
+  waveConfigs:
+  - {fileID: 11400000, guid: 21ddbdf3178d54a4ca31b563ac04a71c, type: 2}
+  - {fileID: 11400000, guid: a98996792676fce42918f19ceb0610cb, type: 2}
+  timeBetweenWaves: 0
+  isLooping: 1
 --- !u!4 &2028427938
 Transform:
   m_ObjectHideFlags: 0
@@ -409,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1919126284976360487, guid: e5da5cb4819d2174ca4ca9970f25e2eb, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 7835052745691319426, guid: a3a36d287ba7f174bb5882c71cb8e8fa, type: 3}
     - target: {fileID: 2123798955884884081, guid: e5da5cb4819d2174ca4ca9970f25e2eb, type: 3}
       propertyPath: m_RootOrder
       value: 1
